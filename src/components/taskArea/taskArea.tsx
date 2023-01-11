@@ -33,7 +33,7 @@ export const TaskArea: FC = (): ReactElement => {
       );
     },
     onSuccess: () => {
-      // Mevcut sorgu verilerini geçersiz kılma
+      // invalidateQueries
       queryClient.invalidateQueries({
         queryKey: ['tasks'],
       });

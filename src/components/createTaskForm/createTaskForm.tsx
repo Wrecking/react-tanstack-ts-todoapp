@@ -42,7 +42,7 @@ export const CreateTaskForm: FC = (): ReactElement => {
       );
     },
     onSuccess: () => {
-      // Mevcut sorgu verilerini geçersiz kılma
+      // invalidateQueries
       queryClient.invalidateQueries({
         queryKey: ['tasks'],
       });
